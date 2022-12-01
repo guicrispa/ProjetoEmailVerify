@@ -69,3 +69,9 @@ body {
     background: rgb(224, 217, 217);
     transition: 0.2s;
 }
+
+
+.whiteForm .form form input[type=password]:focus-within,
+.whiteForm .form form input[type=text]:focus-within{
+    background: rgb(243, 239, 239);
+}
