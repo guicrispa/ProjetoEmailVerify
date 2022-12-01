@@ -61,3 +61,11 @@ body {
     border: 1px solid #333;
 }
 
+.whiteForm .form form input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.whiteForm .form form input[type=submit]:active {    
+    background: rgb(224, 217, 217);
+    transition: 0.2s;
+}
