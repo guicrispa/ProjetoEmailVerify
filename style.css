@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #65ADE2, #BA83C0);
+    transition: 0, 5s;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 550px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.whiteForm {
+    position: absolute;
+    top: 40px;
+    width: 50%;
+    height: 60%;
+    background: #fff;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+}
+
+.whiteForm .form {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    transition: 0.5s;
+}
+
+.whiteForm .form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.whiteForm .form form h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.whiteForm .form form input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #333;
+}
+
+.whiteForm .form form input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.whiteForm .form form input[type=submit]:active {
+    background: rgb(224, 217, 217);
+    transition: 0.2s;
+}
+
+
+.whiteForm .form form input[type=password]:focus-within,
+.whiteForm .form form input[type=text]:focus-within {
+    background: rgb(243, 239, 239);
+}
